@@ -24,7 +24,7 @@ class Result {
         int ans = 0;
         int shared = 5;
         int liked = 0;
-        int x = 3;
+        
         for(int i=1;i<=n;i++){
             liked = shared/2;
             ans = ans + liked;
