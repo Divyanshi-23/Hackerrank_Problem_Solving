@@ -23,7 +23,7 @@ class Result {
     // Write your code here
         int knownTopic1 = 0;
         int knownTopic = 0;
-        int team = 1;
+        int team = 0;
         ArrayList<Integer> ar = new ArrayList<Integer>();
         ArrayList<Integer> maxTopic = new ArrayList<Integer>();
 
@@ -49,13 +49,14 @@ class Result {
        Collections.sort(maxTopic);
        
         int k = maxTopic.size()-1;
-        while(maxTopic.get(k)==maxTopic.get(k-1)){
+        int val = maxTopic.get(k);
+        while(maxTopic.get(k)==val){
             team++;
             k--;
         }
-        ar.add(maxTopic.get(k));
+        ar.add(val);
         ar.add(team);
-       
+        
         return ar;
     }
 
