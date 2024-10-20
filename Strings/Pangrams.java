@@ -11,16 +11,7 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
-
-    /*
-     * Complete the 'pangrams' function below.
-     *
-     * The function is expected to return a STRING.
-     * The function accepts STRING s as parameter.
-     */
-
     public static String pangrams(String s) {
-    // Write your code here
         boolean[] arr = new boolean[26];
         boolean rs = true;
         s = s.toLowerCase();
