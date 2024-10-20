@@ -11,16 +11,7 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
-
-    /*
-     * Complete the 'camelcase' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts STRING s as parameter.
-     */
-
     public static int camelcase(String s) {
-    // Write your code here
         int ans = 1;
         for(int i=0;i<s.length();i++){
             int x = s.charAt(i);
