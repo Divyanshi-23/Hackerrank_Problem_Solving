@@ -11,16 +11,7 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
-
-    /*
-     * Complete the 'marsExploration' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts STRING s as parameter.
-     */
-
     public static int marsExploration(String s) {
-    // Write your code here
         int ans = 0;
         for(int i=0;i<s.length()-2;i=i+3){
            String str = s.substring(i,i+3);
